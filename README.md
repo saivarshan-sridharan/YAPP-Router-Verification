@@ -1,17 +1,15 @@
-Overview
-This project implements a robust Universal Verification Methodology (UVM) testbench for the "Yet Another Packet Protocol" (YAPP) router. The environment is architected to support constrained-random verification with high reusability and scalability.
+# YAPP Router Verification Environment
 
-Key Features
-Modular UVC Architecture: Fully implemented Agents, Drivers, Sequencers, and Monitors.
+## Overview
+This project implements a robust **Universal Verification Methodology (UVM)** testbench for the "Yet Another Packet Protocol" (YAPP) router. The environment is architected to support constrained-random verification with high reusability and scalability.
 
-Constrained-Random Stimulus: Custom uvm-sequence-item with variable payloads and parity injection logic.
+## Key Features
+- **Modular UVC Architecture:** Fully implemented Agents, Drivers, Sequencers, and Monitors.
+- **Constrained-Random Stimulus:** Custom `uvm_sequence_item` with variable payloads and parity injection logic.
+- **Dynamic Configuration:** Utilizes `uvm_config_db` for runtime environment adjustments (Active/Passive agents).
+- **Factory Overrides:** Leverages the UVM Factory for type overrides to inject corner-case transactions (e.g., short packets) without modifying source code.
 
-Dynamic Configuration: Utilizes uvm-config-db for runtime environment adjustments (Active/Passive agents).
-
-Factory Overrides: leverages the UVM Factory for type overrides to inject corner-case transactions (e.g., short packets) without modifying source code.
-
-Tools Used
-Languages: SystemVerilog, UVM 
-
-Simulator: Cadence Xcelium 
+## Tools Used
+- **Languages:** SystemVerilog, UVM
+- **Simulator:** Cadence Xcelium
 
